@@ -1,6 +1,5 @@
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
-import { movies } from "./constants";
 import Home from "./pages/Home/Home";
 import Details from "./pages/Details/Details";
 
@@ -11,7 +10,7 @@ function App() {
     // <div className="w-full">
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="/:id" element={<Details />} />
+      <Route path="/shows/:id" element={<Details />} />
     </Routes>
     // </div>
   );

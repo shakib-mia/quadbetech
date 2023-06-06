@@ -3,9 +3,9 @@ import { useNavigate } from "react-router-dom";
 
 const ListItem = ({ item }) => {
   const navigate = useNavigate();
-  const paragraph =
-    item.show.summary.slice(3, item.show.summary.length - 4).split("<b>")[0] +
-    item.show.summary.slice(3, item.show.summary.length - 4).split("<b>")[1];
+  // const paragraph =
+  //   item.show.summary.slice(3, item.show.summary.length - 4).split("<b>")[0] +
+  //   item.show.summary.slice(3, item.show.summary.length - 4).split("<b>")[1];
 
   //   console.log(
   //     item.show.summary.slice(3, item.show.summary.length - 4).split("<b>")[1] + item.show.summary.slice(3, item.show.summary.length - 4).split("</b>")[0]
@@ -15,7 +15,7 @@ const ListItem = ({ item }) => {
     <div
       className="flex gap-3 items-center mt-10 cursor-pointer bg-cyan-700 hover:bg-cyan-800 p-7 rounded-xl transition-[2s]"
       //   key={key}
-      onClick={() => navigate(`/${item.show.id}`)}
+      onClick={() => navigate(`/shows/${item.show.id}`)}
     >
       <div className="w-1/6">
         <div className="relative rounded-xl w-full overflow-hidden">
