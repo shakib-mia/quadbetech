@@ -14,7 +14,7 @@ const Modal = ({ movie, setDetails }) => {
       </div>
 
       <div className="w-full h-full flex items-center justify-center">
-        <form className="bg-white w-1/2 p-5">
+        <form className="bg-white w-11/12 lg:w-1/2 p-5">
           <h2 className="text-center text-3xl mb-4">{movie?.name}</h2>
           <div className="grid grid-cols-2 gap-5">
             <Input label="Name" id="name" placeholder="Enter Your Name" />

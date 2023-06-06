@@ -20,11 +20,15 @@ const Details = () => {
     <>
       {movie ? (
         <div className="w-full h-screen bg-slate-200 mx-auto">
-          <div className="flex">
-            <div className="w-2/3 p-8">
+          <div className="flex flex-col lg:flex-row">
+            <div className="w-full lg:w-2/3 p-8">
               <h1 className="text-4xl font-light mb-4">{movie.name}</h1>
-              <div className="flex items-start gap-5">
-                <img src={movie.image?.medium} alt={movie.name} />
+              <div className="flex flex-col md:flex-row items-start gap-5">
+                <img
+                  src={movie.image?.medium}
+                  className="mx-auto md:mx-0"
+                  alt={movie.name}
+                />
                 <p
                   className="text-xl"
                   dangerouslySetInnerHTML={{
@@ -33,7 +37,7 @@ const Details = () => {
                 />
               </div>
             </div>
-            <div className="w-1/3">
+            <div className="w-full flex justify-center lg:w-1/3">
               <div className="w-10/12 p-8 rounded-lg mt-8 bg-slate-500 text-white">
                 <div className="flex items-center justify-between">
                   <div></div>
